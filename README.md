@@ -37,16 +37,16 @@ The preprocessing and integration processes have been applied to the two origina
 
 ### **Phase 1**
 
-- #### Part 1: Dataset Understanding
+#### Part 1: Dataset Understanding
 
- 1. **Feature Analysis**: For numerical data, the following statistics are computed:
-    - Mean
-    - Median
-    - Mode
-    - Min
-    - Max
-    - Outliers (using Box Plot)
- 2. **Outlier Detection**: Identifying and handling outliers by plotting box plots for each feature.
+  1. **Feature Analysis**: For numerical data, the following statistics are computed:
+     - Mean
+     - Median
+     - Mode
+     - Min
+     - Max
+     - Outliers (using Box Plot)
+  2. **Outlier Detection**: Identifying and handling outliers by plotting box plots for each feature.
 
 #### Part 2: Data Quality Assessment
 
