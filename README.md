@@ -26,6 +26,11 @@ The preprocessing and integration processes have been applied to the two origina
 
 ## **Structure of the Project**
 
+phase1 -> DataPreProcessing.ipynb
+phase2 -> part1: FrequentPatternExtraction.ipynb
+          part2: clustering.ipynb
+                 Classification.ipynb
+
 ### **Phase 1**
 
 #### Part 1: Dataset Understanding
@@ -70,19 +75,26 @@ The preprocessing and integration processes have been applied to the two origina
 #### Part 1: Extracting Frequent Patterns
 
 1. **Dataset Preparation**: 
-   - Using a combined dataset from Google Play and Play Store, joined on the "App Name" column.
+   - Using the cleaned dataset of previous phase, combined from Google Play and Play Store, joined on the "App Name" column.
 
 2. **Data Preprocessing**: 
-   - Applying binning techniques to numerical columns using the Freedman-Diaconis rule for optimal bin calculation.
+   - Applying binning techniques to convert numerical columns to categorical.
    - Converting categorical data to appropriate formats for analysis.
 
 3. **Frequent Itemset Mining**: 
-   - Utilizing the Apriori algorithm from the mlxtend library with a minimum support threshold of 0.05.
+   - Utilizing the Apriori algorithm from the mlxtend library.
+     
+     <img src="./phase2_tables/freq_itemsets.png" width="50%" height="50%">
+     
    - Identifying maximal itemsets from the frequent itemsets.
+
+     <img src="./phase2_tables/maximal_itemset.png" width="50%" height="50%">
 
 4. **Association Rule Mining**: 
    - Extracting association rules from maximal itemsets with a confidence threshold of 0.7.
    - Analyzing the rules to uncover hidden patterns and relationships within the data.
+  
+     <img src="./phase2_tables/association_rules.png" width="50%" height="50%">
 
 #### Part 2: Clustering and Classification
 
@@ -95,12 +107,19 @@ The preprocessing and integration processes have been applied to the two origina
    
    - **K-means Implementation**:
      - Determining optimal K using the elbow method (testing K from 1 to 12).
+    
+       <img src="./phase2_tables/elbow_method.png" width="50%" height="50%">
+
      - Visualizing clusters in 2D and 3D plots.
+    
+       <img src="./phase2_tables/kmeans_2D.png" width="50%" height="50%"><img src="./phase2_tables/kmeans_3D.png" width="50%" height="50%">
    
    - **DBSCAN Implementation**:
      - Applying DBSCAN algorithm to the preprocessed data.
      - Visualizing DBSCAN clusters in 2D and 3D plots.
-   
+    
+       <img src="./phase2_tables/dbscan_2D.png" width="50%" height="50%"><img src="./phase2_tables/dbscan_3D.png" width="50%" height="50%">
+
    - **Pattern Analysis**:
      - Extracting frequent itemsets and association rules for each cluster to identify cluster-specific patterns.
 
@@ -109,6 +128,8 @@ The preprocessing and integration processes have been applied to the two origina
    
    - **Feature Selection**:
      - Using correlation matrix to identify relevant features for rating prediction.
+    
+       <img src="./phase2_tables/correlation.png" width="50%" height="50%">
    
    - **Data Preprocessing**:
      - Converting 'normal_rating' to ordinal categorical type.
@@ -118,10 +139,16 @@ The preprocessing and integration processes have been applied to the two origina
    - **Model Implementation**:
      - Implementing three classification models: Decision Tree, Random Forest, and Naive Bayes.
      - Performing hyperparameter tuning using Grid Search for each model.
+
+       <img src="./phase2_tables/hyperparameter_tuning.png" width="50%" height="50%">
    
    - **Model Evaluation**:
      - Using metrics such as Accuracy, Precision, Recall, and F1 Score.
      - Generating confusion matrices for each model.
+       
+       <img src="./phase2_tables/eval_DT.png" width="50%" height="50%">
+       <img src="./phase2_tables/eval_RF.png" width="50%" height="50%">
+       <img src="./phase2_tables/eval_NB.png" width="50%" height="50%">
    
    - **Results**:
      - Random Forest performed best among the three models.
@@ -131,7 +158,7 @@ The enhanced clustering and classification techniques provide deeper insights in
 ## Requirements
 
 - **Python**: Ensure you have Python installed (preferably Python 3.8 or higher).
-- **Jupyter Notebook**: For running the `.ipynb` file.
+- **Jupyter Notebook**: For running the `.ipynb` files.
 - **Libraries**: Install the necessary Python libraries using the command below:
   ```sh
   pip install -r requirements.txt
@@ -148,12 +175,13 @@ The enhanced clustering and classification techniques provide deeper insights in
    cd DataMining
    ```
 3. Open the Jupyter Notebook:
+   open the notebook related to the phase you want to execute. 
    ```sh
    jupyter notebook DataMining.ipynb
    ```
-4. Run the cells in the notebook sequentially to perform the data mining tasks as outlined.
+5. Run the cells in the notebooks sequentially to perform the data mining tasks as outlined.
 
 ## Results
 
-The notebook contains detailed results of each Part, including visualizations, statistical analyses, and data preprocessing steps. Ensure to go through the notebook for insights and understanding of the dataset.
+The notebooks contains detailed results of each Part, including visualizations, statistical analyses, data preprocessing and data mining steps. Ensure to go through the notebook for insights and understanding of the dataset.
 The documentation of the implementation of Phase 2 is available in `DataMining_Document_phase2.pdf`.
