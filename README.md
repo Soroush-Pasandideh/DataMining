@@ -26,9 +26,9 @@ The preprocessing and integration processes have been applied to the two origina
 
 ## **Structure of the Project**
 
-phase1:
+- phase1:
   - DataPreProcessing.ipynb
-phase2: 
+- phase2: 
   - part1:
     - FrequentPatternExtraction.ipynb
   - part2:
@@ -39,14 +39,14 @@ phase2:
 
 - #### Part 1: Dataset Understanding
 
-1. **Feature Analysis**: For numerical data, the following statistics are computed:
-   - Mean
-   - Median
-   - Mode
-   - Min
-   - Max
-   - Outliers (using Box Plot)
-2. **Outlier Detection**: Identifying and handling outliers by plotting box plots for each feature.
+ 1. **Feature Analysis**: For numerical data, the following statistics are computed:
+    - Mean
+    - Median
+    - Mode
+    - Min
+    - Max
+    - Outliers (using Box Plot)
+ 2. **Outlier Detection**: Identifying and handling outliers by plotting box plots for each feature.
 
 #### Part 2: Data Quality Assessment
 
