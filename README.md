@@ -26,15 +26,18 @@ The preprocessing and integration processes have been applied to the two origina
 
 ## **Structure of the Project**
 
-- phase1 -> - DataPreProcessing.ipynb
-- phase2 -> 
-          - part1: - FrequentPatternExtraction.ipynb
-          - part2: - Clustering.ipynb
-                   - Classification.ipynb
+phase1:
+  - DataPreProcessing.ipynb
+phase2: 
+  - part1:
+    - FrequentPatternExtraction.ipynb
+  - part2:
+    - Clustering.ipynb
+    - Classification.ipynb
 
 ### **Phase 1**
 
-#### Part 1: Dataset Understanding
+- #### Part 1: Dataset Understanding
 
 1. **Feature Analysis**: For numerical data, the following statistics are computed:
    - Mean
