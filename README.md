@@ -1,4 +1,26 @@
 # Data Mining Project
+
+## Table of Contents
+
+1. [Overview](#overview)
+2. [Datasets](#datasets)
+   - [Primary Dataset](#primary-dataset)
+   - [Additional Dataset](#additional-dataset)
+   - [Result Dataset](#result-dataset)
+3. [Structure of the Project](#structure-of-the-project)
+   - [Phase 1](#phase-1)
+     - [Part 1: Dataset Understanding](#part-1-dataset-understanding)
+     - [Part 2: Data Quality Assessment](#part-2-data-quality-assessment)
+     - [Part 3: Data Preprocessing](#part-3-data-preprocessing)
+     - [Part 4: Dataset Integration](#part-4-dataset-integration)
+   - [Phase 2](#phase-2)
+     - [Part 1: Extracting Frequent Patterns](#part-1-extracting-frequent-patterns)
+     - [Part 2: Clustering and Classification](#part-2-clustering-and-classification)
+4. [Requirements](#requirements)
+5. [Usage](#usage)
+6. [Results](#results)
+
+
 ## Overview
 
 This repository contains the implementation of a Data Mining project. The project is structured into multiple Parts across two phases, each focusing on different aspects of data preprocessing, quality assessment, analysis, and advanced data mining techniques. The main tasks performed in this project include:
