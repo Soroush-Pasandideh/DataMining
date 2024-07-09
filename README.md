@@ -26,10 +26,11 @@ The preprocessing and integration processes have been applied to the two origina
 
 ## **Structure of the Project**
 
-phase1 -> DataPreProcessing.ipynb
-phase2 -> part1: FrequentPatternExtraction.ipynb
-          part2: clustering.ipynb
-                 Classification.ipynb
+- phase1 -> - DataPreProcessing.ipynb
+- phase2 -> 
+          - part1: - FrequentPatternExtraction.ipynb
+          - part2: - Clustering.ipynb
+                   - Classification.ipynb
 
 ### **Phase 1**
 
@@ -84,17 +85,17 @@ phase2 -> part1: FrequentPatternExtraction.ipynb
 3. **Frequent Itemset Mining**: 
    - Utilizing the Apriori algorithm from the mlxtend library.
      
-     <img src="./phase2_tables/freq_itemsets.png" width="50%" height="50%">
+     <img src="./phase2_tables/freq_itemsets.png" width="80%" height="80%">
      
    - Identifying maximal itemsets from the frequent itemsets.
 
-     <img src="./phase2_tables/maximal_itemset.png" width="50%" height="50%">
+     <img src="./phase2_tables/maximal_itemset.png" width="80%" height="80%">
 
 4. **Association Rule Mining**: 
    - Extracting association rules from maximal itemsets with a confidence threshold of 0.7.
    - Analyzing the rules to uncover hidden patterns and relationships within the data.
   
-     <img src="./phase2_tables/association_rules.png" width="50%" height="50%">
+     <img src="./phase2_tables/association_rules.png" width="80%" height="80%">
 
 #### Part 2: Clustering and Classification
 
@@ -112,13 +113,17 @@ phase2 -> part1: FrequentPatternExtraction.ipynb
 
      - Visualizing clusters in 2D and 3D plots.
     
-       <img src="./phase2_tables/kmeans_2D.png" width="50%" height="50%"><img src="./phase2_tables/kmeans_3D.png" width="50%" height="50%">
+       <img src="./phase2_tables/kmeans_2D.png" width="50%" height="50%">
+       
+       <img src="./phase2_tables/kmeans_3D.png" width="50%" height="50%">
    
    - **DBSCAN Implementation**:
      - Applying DBSCAN algorithm to the preprocessed data.
      - Visualizing DBSCAN clusters in 2D and 3D plots.
     
-       <img src="./phase2_tables/dbscan_2D.png" width="50%" height="50%"><img src="./phase2_tables/dbscan_3D.png" width="50%" height="50%">
+       <img src="./phase2_tables/dbscan_2D.png" width="50%" height="50%">
+       
+       <img src="./phase2_tables/dbscan_3D.png" width="50%" height="50%">
 
    - **Pattern Analysis**:
      - Extracting frequent itemsets and association rules for each cluster to identify cluster-specific patterns.
@@ -129,7 +134,7 @@ phase2 -> part1: FrequentPatternExtraction.ipynb
    - **Feature Selection**:
      - Using correlation matrix to identify relevant features for rating prediction.
     
-       <img src="./phase2_tables/correlation.png" width="50%" height="50%">
+       <img src="./phase2_tables/correlation.png" width="90%" height="90%">
    
    - **Data Preprocessing**:
      - Converting 'normal_rating' to ordinal categorical type.
